@@ -57,3 +57,6 @@ export PATH=$PATH:/opt/bin
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
+[[ -s "/home/users/minqiyang/.jumbo/etc/bashrc" ]] && source "/home/users/minqiyang/.jumbo/etc/bashrc"
+test -s ~/bin/bladefunctions && . ~/bin/bladefunctions || true
+[[ -s "/home/minqiyang/.jumbo/etc/bashrc" ]] && source "/home/minqiyang/.jumbo/etc/bashrc"
