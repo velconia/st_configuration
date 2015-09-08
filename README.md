@@ -14,4 +14,7 @@ ip:
 
 so we could use "Add Channel" in Pacakge Control and input the following two lines
 http://50.116.34.243/channel_v3.json
+
 http://sublime.wbond.net/channel_v3.json
+
+http://li424-243.members.linode.com/channel_v3.json
