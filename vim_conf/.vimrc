@@ -5,7 +5,10 @@
 :highlight Statement gui=NONE guifg=blue ctermfg=cyan
 :highlight PreProc guifg=red ctermfg=red
 :highlight Type gui=NONE guifg=blue ctermfg=green
-colorscheme morning " 设定配色方案
+syntax enable            
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized "设定配色方案
 set number " 显示行号
 set cursorline " 突出显示当前行
 set ruler " 打开状态栏标尺

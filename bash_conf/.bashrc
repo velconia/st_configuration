@@ -6,6 +6,7 @@
 ####################################
 
 # .bashrc
+# export TERM=xterm-256color
 
 # User specific aliases and functions
 
@@ -22,11 +23,11 @@ alias lh='ll -h'
 alias tf='tail -f'
 
 ## tmux
-alias ta='tmux attach-session -t'
-alias tk='tmux kill-session -t'
-alias tl='tmux list-session'
-alias tn='tmux new-session'
-alias tr='tmux rename-session -t'
+alias ta='tmux -2 attach-session -t'
+alias tk='tmux -2 kill-session -t'
+alias tl='tmux -2 list-session'
+alias tn='tmux -2 new-session'
+alias tr='tmux -2 rename-session -t'
 
 ## git
 alias ga='git add'
@@ -57,6 +58,9 @@ export PATH=$PATH:/opt/bin
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
-[[ -s "/home/users/minqiyang/.jumbo/etc/bashrc" ]] && source "/home/users/minqiyang/.jumbo/etc/bashrc"
-test -s ~/bin/bladefunctions && . ~/bin/bladefunctions || true
-[[ -s "/home/minqiyang/.jumbo/etc/bashrc" ]] && source "/home/minqiyang/.jumbo/etc/bashrc"
+
+# maven bin
+export PATH=/usr/local/apache-maven-3.0.4/bin:$PATH
+
+# java home
+export JAVA_HOME=$(/usr/libexec/java_home)
