@@ -1,5 +1,5 @@
 # st_configuration
-The configuration of sublime text testa
+The configuration of sublime text testaa
 
 # about GFW
 The packagecontrol.io is "greened" recently, so we could NOT access it anymore :(.
